@@ -128,7 +128,7 @@ const BubbleText = () => {
       resizeTimeout = setTimeout(() => {
         setCanvasSize();
         drawText();
-      }, 200); // Debounce time
+      }, 200); // Debounce times
     });
   }, []);
 
