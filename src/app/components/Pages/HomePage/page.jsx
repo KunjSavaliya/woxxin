@@ -72,7 +72,7 @@ function MainPage() {
           <button className="bg-[#6C63FF] text-white  px-4 py-2 md:px-6 md:py-3 font-bold rounded mb-4 w-[40%] md:w-[40%]">
             Get Started
           </button>
-          <img src="/headerImage.png" alt="header-image" className="mb-4 w-96 md:w-96" />
+          <img src="/HeaderImage.png" alt="header-image" className="mb-4 w-96 md:w-96" />
         </div>
 
         <div className='w-full md:w-[50%] max-w-[600px] flex justify-center'>
