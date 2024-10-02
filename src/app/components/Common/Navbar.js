@@ -29,7 +29,7 @@ function Navbar() {
         isScrolled ? 'fixed top-0 left-0 w-full z-50 bg-[#F5F7FA] shadow-lg' : 'relative'
       } transition-all duration-300 ease-in-out`}
     >
-      <div className="flex items-center justify-between p-5 text-black lg:justify-around">
+      <div className="flex items-center justify-between p-3 text-black lg:justify-around">
         {/* Logo */}
         <div>
           <img src="/logo.png" alt="logo" className="w-28" />
@@ -65,7 +65,7 @@ function Navbar() {
 
         {/* Sidebar for Mobile */}
         {isOpen && (
-          <div className="fixed top-0 left-0 z-50 w-full p-5 transition-transform duration-300 ease-in-out bg-white shadow-lg lg:w-1/2 h-1/2">
+          <div className="fixed top-0 left-0 z-50 w-full p-3 transition-transform duration-300 ease-in-out bg-white shadow-lg lg:w-1/2 ">
             {/* Sidebar Header: Logo + Close Icon */}
             <div className="flex items-center justify-between mb-5">
               <img src="/logo.png" alt="logo" className="w-28" />
