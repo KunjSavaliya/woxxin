@@ -69,7 +69,7 @@ function MainPage() {
           <p className='text-lg md:text-xl text-[#717171] mb-4'>
             All-in-one solution for all your app monetization and user acquisition needs so that you can concentrate on making awesome apps.
           </p>
-          <button className="bg-[#6C63FF] text-white  px-4 py-2 md:px-6 md:py-3 font-bold rounded mb-4 w-[40%] md:w-[40%]">
+          <button className="bg-[#6C63FF] text-white  px-4 py-2 md:px-6 md:py-3 font-bold rounded mb-4 w-[60%] md:w-[40%]">
             Get Started
           </button>
           <img src="/HeaderImage.png" alt="header-image" className="mb-4 w-96 md:w-96" />
