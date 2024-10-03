@@ -76,7 +76,7 @@ function Advertisers() {
               • Direct Link is the easiest way to profit from website traffic.
             </p>
             <p className='text-lg'>
-              • Publishers can add it to texts, buttons, or pictures as a simple link. Also, it's the best option to earn from social traffic.
+              • Publishers can add it to texts, buttons, or pictures as a simple link. Also, it&apos;s the best option to earn from social traffic.
             </p>
             
           </div>

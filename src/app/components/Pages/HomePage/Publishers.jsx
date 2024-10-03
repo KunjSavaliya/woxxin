@@ -29,7 +29,7 @@ function Publishers() {
             </p>
           </div>
           <div className='flex flex-wrap justify-center gap-3 lg:justify-start mt-7'>
-          <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
+            <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
             <VideoButton text="Learn More" className="mt-5 text-white bg-[#373435]" />
           </div>
         </div>
@@ -38,14 +38,14 @@ function Publishers() {
 
         <div>
           <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px] text-start'}>
-          Social Bar
+            Social Bar
           </Text>
           <div className=' flex flex-col gap-4 font-normal text-[#333] mt-3  '>
             <p className='text-xl'>
-            UX-friendly ad formats that run on all OS and in all browsers
+              UX-friendly ad formats that run on all OS and in all browsers
             </p>
             <p className='text-lg'>
-              • Browser-friendly, non-intrusive ads with 9.9B monthly impressions. 
+              • Browser-friendly, non-intrusive ads with 9.9B monthly impressions.
             </p>
             <p className='text-lg'>
               • Out-of-the-box template creatives with 30X higher CTRs compared to web push.
@@ -55,7 +55,7 @@ function Publishers() {
             </p>
           </div>
           <div className='flex flex-wrap justify-center gap-3 lg:justify-start mt-7'>
-          <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
+            <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
             <VideoButton text="Learn More" className="mt-5 text-white bg-[#373435]" />
           </div>
         </div>
@@ -70,24 +70,24 @@ function Publishers() {
         </div>
         <div>
           <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px] text-start'}>
-          In-Page Push
+            In-Page Push
           </Text>
           <div className=' flex flex-col gap-4 font-normal text-[#333] mt-3  '>
             <p className='text-xl'>
-            Users receive notifications right in their desktop or mobile browsers
+              Users receive notifications right in their desktop or mobile browsers
             </p>
             <p className='text-lg'>
               • The most advanced replacement to classic push traffic.
             </p>
             <p className='text-lg'>
-              • In-Page Push ads don't require opt-ins, running on all OS and in all browsers.
+              • In-Page Push ads don&apos;t require opt-ins, running on all OS and in all browsers.
             </p>
             <p className='text-lg'>
-              • In-Page Push ads don't require opt-ins, running on all OS and in all browsers.
+              • You can buy CPM, CPC, and CPA in-page traffic.
             </p>
           </div>
           <div className='flex flex-wrap justify-center gap-3 lg:justify-start mt-7'>
-          <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
+            <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
             <VideoButton text="Learn More" className="mt-5 text-white bg-[#373435]" />
           </div>
         </div>
@@ -96,11 +96,11 @@ function Publishers() {
 
         <div>
           <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px] text-start'}>
-          Interstitials
+            Interstitials
           </Text>
           <div className=' flex flex-col gap-4 font-normal text-[#333] mt-3  '>
             <p className='text-xl'>
-            Full-screen ads appear on top of the website content
+              Full-screen ads appear on top of the website content
             </p>
             <p className='text-lg'>
               • Full-screen ads appear on top of the website content
@@ -113,7 +113,7 @@ function Publishers() {
             </p>
           </div>
           <div className='flex flex-wrap justify-center gap-3 lg:justify-start mt-7'>
-          <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
+            <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
             <VideoButton text="Learn More" className="mt-5 text-white bg-[#373435]" />
           </div>
         </div>

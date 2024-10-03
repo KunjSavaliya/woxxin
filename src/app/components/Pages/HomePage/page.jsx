@@ -7,8 +7,8 @@ import itemVariants from '@/app/Pages/Animation';
 import Text from '../../../Reusable/Text';
 import Button from '@/app/Reusable/Button';
 import { contentArray, images } from '@/app/Pages/HomePage/Data';
-import Publishers from './Publishers ';
 import Advertisers from './Advertisers';
+import Publishers from './Publishers';
 
 function MainPage() {
   const [active, setActive] = useState('Advertisers');
