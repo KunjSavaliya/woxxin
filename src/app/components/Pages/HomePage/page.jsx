@@ -1,127 +1,155 @@
 'use client';
 import WaveText from '@/app/Pages/BubbleText';
-import React from 'react';
+import React, { useState } from 'react';
+import { FaArrowRight } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import itemVariants from '@/app/Pages/Animation';
+import Text from '../../../Reusable/Text';
+import Button from '@/app/Reusable/Button';
+import { contentArray, images } from '@/app/Pages/HomePage/Data';
+import Publishers from './Publishers ';
+import Advertisers from './Advertisers';
 
 function MainPage() {
-  const images = [
-    '/HomePages/Logo1.png',
-    '/HomePages/Logo2.png',
-    '/HomePages/Logo3.png',
-    '/HomePages/Logo4.png',
-    '/HomePages/Logo5.png',
-    '/HomePages/Logo6.png',
-    '/HomePages/Logo7.png',
-    '/HomePages/Logo.png'
+  const [active, setActive] = useState('Advertisers');
 
-  ];
-  const contentArray = [
-    {
-      imgSrc: "/ScreenImg/Screen1.png",
-      title: "Recover Ad-blocked Revenue",
-      description: "We help publishers recover the revenue they are losing due to ad  blockers. Our ads adhere to the highest UX standards as laid out by the Acceptable Ads standards.",
-      learnMore: "Learn More",
-    },
-    {
-      imgSrc: "/ScreenImg/Screen2.png",
-      title: "Blazing Fast Ad Delivery",
-      description: "We help publishers recover the revenue they are losing due to ad  blockers. Our ads adhere to the highest UX standards as laid out by the Acceptable Ads standards.",
-      learnMore: "Learn More",
-    },
-    {
-      imgSrc: "/ScreenImg/Screen3.png",
-      title: "Drive Bid Competition",
-      description: "Open up your ad inventory for bidding by multiple demand partners in  real-time. Our system auto-selects the optimal number of partners, so  that you get the best yield for every single impression.",
-      learnMore: "Learn More",
-    },
-    {
-      imgSrc: "/ScreenImg/Screen4.png",
-      title: "Highly-viewable Formats",
-      description: "Our visual ad manager allows point-and-click creation of new ad units and layouts, while our machine learning based layout optimizer  drives ad revenue growth using automated A/B testing.",
-      learnMore: "Learn More",
-    },
-    {
-      imgSrc: "/ScreenImg/Screen5.png",
-      title: "Maximize eCPMs & Revenue",
-      description: "Open up your ad inventory for bidding by multiple demand partners in  real-time. Our system auto-selects the optimal number of partners, so  that you get the best yield for every single impression.",
-      learnMore: "Learn More",
-    },
-    {
-      imgSrc: "/ScreenImg/Screen6.png",
-      title: "Improve Clickthrough Rates",
-      description: "Our visual ad manager allows point-and-click creation of new ad units and layouts, while our machine learning based layout optimizer  drives ad revenue growth using automated A/B testing.",
-      learnMore: "Learn More",
-    },
-  ];
   return (
     <>
+  <div className="relative mb-20">
+  <div>
+    <img
+      src="/HomePages/Home.png"
+      alt="Main Background"
+      className="w-full h-[600px] object-cover"
+    />
+  </div>
+
+  <div className="absolute top-0 left-0 flex flex-col items-start justify-center w-full h-full p-4 text-left md:p-10">
+    <div className="text-white">
+      <Text size="text-4xl md:text-4xl lg:text-5xl xl:text-[50px] text-white text-start">
+        Accelerate your app growth
+      </Text>
+      <Text size="text-xl md:text-2xl lg:text-3xl xl:text-[30px] text-white text-start">
+      with a Unique Partner Care Approach
+
+      </Text>
+     
+      <div className='flex flex-wrap justify-center gap-5 lg:justify-start'>
+        <Button text="Learn More" className="mt-5 text-black bg-white hover:bg-[#373435] hover:text-white" />
+
+<Button text="Learn More" className="mt-5 text-black bg-white hover:bg-[#373435] hover:text-white" />
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+      <div className='lg:px-28 xl:px-32'>
+        <div className='bg-[#efefef] pt-16 rounded-md'>
+          <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px]'}>
+            Who can <span className='text-[#6C63FF]'>benefit from Woxxin</span> ad network
+          </Text>
+
+          <div className='flex flex-col gap-32 pb-10 mt-10 lg:flex-row lg:px-28 xl:px-40 lg:pb-32 xl:pb-32'>
+            <div className='flex flex-col items-center text-center lg:items-start lg:text-start'>
+              <img
+                src="/HomePages/advertisers1.svg"
+                alt="Advertisers Icon"
+                className="w-32 h-32"
+              />
+              <Text className={'text-3xl p-0 -mt-3'}>
+                Advertisers
+              </Text>
+              <p className='font-normal text-[#333] mt-3 px-10 md:px-28 lg:px-0 '>
+                Adsterra is a powerful online advertising network for brands, agencies, and media buyers. With over 20 targeting settings, you deliver ads to the best-matching audiences. Unlock high-quality CPM, CPC, and CPA traffic from 35K+ direct publishers.
+              </p>
+              <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
+            </div>
+
+            <div className='flex flex-col items-center text-center lg:items-start lg:text-start'>
+              <img
+                src="/HomePages/advertisers2.svg"
+                alt="Advertisers Icon"
+                className="w-32 h-32"
+              />
+              <Text className={'text-3xl p-0 -mt-3'}>
+                Publishers
+              </Text>
+              <p className='font-normal text-[#333] mt-3 px-10 md:px-28 lg:px-0 '>
+                With the highest-paying ad network, publishers can monetize sites, blogs or social media traffic. We provide solutions for earning without a website. AI algorithms are finetuned to send the most relevant CPM rates and ad feed.
+              </p>
+              <Button text="Learn More" className="mt-5 text-white bg-[#373435] hover:bg-[#6C63FF]" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div className="flex flex-col items-center justify-center w-full pt-4 bg-white">
-        <div className="cursor-pointer w-full h-[100px] sm:h-[150px] md:h-[250px] lg:h-[250px] xl:h-[350px] hidden lg:flex justify-center items-center">
+        <div className="cursor-pointer w-full h-[100px]  lg:h-[250px] xl:h-[350px] hidden lg:flex justify-center items-center">
           <WaveText />
         </div>
       </div>
-
-
-      <div className='flex flex-col items-start justify-around p-16 lg:mt-8 gap-11 md:flex-row  bg-[#F5F7FA]'>
-        <div className='flex flex-col w-[100%] md:w-[50%] max-w-[600px]'>
-          <h1 className='text-3xl md:text-5xl text-[#717171] font-bold mb-4'>
-            Accelerate your app growth
-          </h1>
-          <p className='text-lg md:text-xl text-[#717171] mb-4'>
-            All-in-one solution for all your app monetization and user acquisition needs so that you can concentrate on making awesome apps.
-          </p>
-          <button className="bg-[#6C63FF] text-white  px-4 py-2 md:px-6 md:py-3 font-bold rounded mb-4 w-[60%] md:w-[40%]">
-            Get Started
-          </button>
-          <img src="/HeaderImage.png" alt="header-image" className="mb-4 w-96 md:w-96" />
+      <div >
+        <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px]'}>
+          We deliver <span className='text-[#6C63FF]'>high-converting ads </span>  and traffic
+        </Text>
+      </div>
+      <div className='mt-20 font-bold lg:px-28 xl:px-40'>
+        <div className="flex  rounded-[50px] ">
+          <div
+            onClick={() => setActive('Advertisers')}
+            className={`flex-1 text-center p-2 cursor-pointer text-[#373435] rounded-[50px] ${active === 'Advertisers' ? 'bg-[#373435] text-white' : ''}`}
+          >
+            <p className='text-md md:text-xl '>Advertisers</p>
+          </div>
+          <div
+            onClick={() => setActive('Publishers')}
+            className={`flex-1 text-center p-2  text-[#373435] cursor-pointer rounded-[50px] ${active === 'Publishers' ? 'bg-[#373435] text-white' : ''}`}
+          >
+            <p className='text-md md:text-xl '>Publishers</p>
+          </div>
         </div>
 
-        <div className='w-full md:w-[50%] max-w-[600px] flex justify-center'>
-          <img src="/homepage.png" alt="homepage" className="w-96 md:w-96" />
-        </div>
       </div>
-      <div className='mt-8 text-center'>
-        <h1 className='text-xl md:text-4xl text-[#717171] font-bold mb-4'>Trusted by top publishers</h1>
-        <p className='text-md md:text-xl text-[#717171]'>TRUSTED BY MORE THAN 300 PUBLISHERS ACROSS 50+ COUNTRIES</p>
-
-
+      <div>
+        {active === "Advertisers" ?
+          <Advertisers />
+          :
+          <Publishers />
+        }
+      </div>
+      <div className='mt-20 text-center'>
+        <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px] xl:ml-80 xl:mr-80'}>
+          Maximize yield from every <span className='text-[#6C63FF]'>single ad impression</span> on your website using a single platform
+        </Text>
       </div>
 
-      <div className="flex flex-wrap justify-around mt-20 gap-11">
-        {images.map((src, index) => (
-          <div key={index}>
-            <img src={src} alt={`image-${index}`} className="w-16 md:w-16" />
+      <div>
+
+      </div>
+      <motion.div className='grid justify-around grid-cols-1 p-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-7 md:px-8 lg:px-28 xl:px-40'
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }} // trigger animation when 20% of the block is in view
+        variants={itemVariants}
+      >
+        {contentArray.map((content, index) => (
+          <div key={index} className='w-auto p-5 mx-auto text-center shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded-2xl'>
+            <img src={content.imgSrc} alt={content.title} className="w-16 mx-auto md:w-20 lg:w-24 xl:w-28" />
+            <h1 className='text-xl  xl:text-2xl text-[#717171] font-bold mb-4 mt-6'>{content.title}</h1>
+            <p className='text-md  xl:text-xl text-[#717171] mb-4'>{content.description}</p>
+            <div className='flex justify-center gap-1'>
+              <p className="text-blue-500 cursor-pointer text-md ">{content.learnMore} </p>
+              <FaArrowRight className="mt-1 ml-2 text-center text-blue-500" />
+            </div>
           </div>
         ))}
-      </div>
+      </motion.div>
 
-      <div className='mt-20 text-center'>
-        <h1 className='text-xl md:text-5xl text-[#717171] font-bold mb-4 xl:ml-80 xl:mr-80'>
-          Maximize yield from every single ad impression on your website using a single platform
-        </h1>
-      </div>
-
-<div>
-
-</div>
-<div className='grid justify-around grid-cols-1 p-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-7 md:px-8 lg:px-16 xl:px-24'>
-      {contentArray.map((content, index) => (
-        <div key={index} className='w-auto p-5 mx-auto text-center shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded-2xl'>
-          <img src={content.imgSrc} alt={content.title} className="w-16 mx-auto md:w-20 lg:w-24 xl:w-28" />
-          <h1 className='text-xl  xl:text-2xl text-[#717171] font-bold mb-4 mt-6'>{content.title}</h1>
-          <p className='text-md  xl:text-xl text-[#717171] mb-4'>{content.description}</p>
-          <p className="text-blue-500 cursor-pointer">{content.learnMore}</p>
-        </div>
-      ))}
-    </div>
-    <div className='p-5 mt-8 text-center md:px-8 lg:px-16 xl:px-24'>
-        <h1 className='text-xl md:text-4xl text-[#717171] font-bold mb-4'>Global Demand</h1>
-        <p className='text-md md:text-xl text-[#717171] mt-4'>Put your inventory in front of the biggest gaming and brand advertisers.</p>
-        <p className='text-md md:text-xl text-[#717171] mt-8'>Generate advertising revenue from global users with access the newest  technologies and features in the market. Monetize supports iOS, Android,
-        Windows, and Amazon platforms, so you can maximize your earnings  potential.</p>
-
-
-
-      </div>
     </>
   );
 }

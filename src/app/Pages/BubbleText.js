@@ -2,11 +2,13 @@ import React, { useEffect, useRef } from 'react';
 
 const BubbleText = () => {
   const canvasRef = useRef(null);
-  const text = 'Woxxin Solution'; // The text you want to render with bubbles
+  const text = 'JOIN WOXXIN TODAY'; // The text you want to render with bubbles
   const textColor = '#6C63FF'; // Text color
 
   useEffect(() => {
     const canvas = canvasRef.current;
+
+    if (!canvas) return; // Check if canvas is available
     const ctx = canvas.getContext('2d');
 
     // Set canvas size
@@ -23,7 +25,7 @@ const BubbleText = () => {
 
     let mouse = { x: null, y: null, radius: 100 }; // Adjust the radius for repulsion effect
     let particles = [];
-    const particleSize = 2; // Size of particles
+    const particleSize = 1.5; // Size of particles
 
     // Adjust text size based on canvas width and height
     const getTextSize = () => Math.min(canvas.width * 0.15, canvas.height * 0.4); // Text size
@@ -130,9 +132,19 @@ const BubbleText = () => {
         drawText();
       }, 200); // Debounce times
     });
+
+    return () => {
+      // Clean up the event listeners on unmount
+      window.removeEventListener('mousemove', () => {});
+      window.removeEventListener('resize', () => {});
+    };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ display: 'block', width: '100%', height: '100%' }}></canvas>;
+  return (
+    <div className="w-full h-full "> {/* Add background color here */}
+      <canvas ref={canvasRef} style={{ display: 'block', width: '100%', height: '100%' }}></canvas>
+    </div>
+  );
 };
 
 export default BubbleText;
