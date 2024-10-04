@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^11.9.0",
+    "@react-three/drei": "^9.114.0",
+    "@react-three/fiber": "^8.17.9",
+    "animate.css": "^4.1.1",
+    "framer-motion": "^11.11.0",
+    "gsap": "^3.12.5",
     "next": "^14.2.14",
     "react": "^18",
     "react-dom": "^18",

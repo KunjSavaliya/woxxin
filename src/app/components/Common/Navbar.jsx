@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
+import 'animate.css'; // Import animate.css
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,9 @@ function Navbar() {
   return (
     <div
       className={`${
-        isScrolled ? 'fixed top-0 left-0 w-full z-50 bg-[#F5F7FA] shadow-lg' : 'relative'
+        isScrolled
+          ? 'fixed top-0 left-0 w-full z-50 bg-white shadow-lg animate__animated animate__fadeInDown'
+          : 'relative'
       } transition-all duration-300 ease-in-out`}
     >
       <div className="flex items-center justify-between p-3 text-black lg:justify-around">
@@ -37,7 +40,7 @@ function Navbar() {
 
         {/* Links (Hidden on Mobile) */}
         <div className="items-center hidden font-bold cursor-pointer lg:flex">
-          <div className="flex gap-8">
+          <div className="flex gap-8 text-xl font-light">
             <p>About us</p>
             <p>News & Events</p>
             <p>Careers</p>
@@ -65,7 +68,9 @@ function Navbar() {
 
         {/* Sidebar for Mobile */}
         {isOpen && (
-          <div className="fixed top-0 left-0 z-50 w-full p-3 transition-transform duration-300 ease-in-out bg-white shadow-lg lg:w-1/2 ">
+          <div
+            className="fixed top-0 left-0 z-50 w-full p-3 bg-white shadow-lg lg:w-1/2 animate__animated animate__fadeInDown"
+          >
             {/* Sidebar Header: Logo + Close Icon */}
             <div className="flex items-center justify-between mb-5">
               <img src="/logo.png" alt="logo" className="w-28" />
@@ -77,12 +82,12 @@ function Navbar() {
             {/* Sidebar Links */}
             <div className="flex flex-col gap-5">
               <div className="flex flex-col gap-3 cursor-pointer">
-                <p className="text-lg font-semibold">About us</p>
-                <p className="text-lg font-semibold">News & Events</p>
-                <p className="text-lg font-semibold">Careers</p>
-                <p className="text-lg font-semibold">Product</p>
-                <p className="text-lg font-semibold">Resources</p>
-                <p className="text-lg font-semibold">Contact Us</p>
+                <p className="text-xl font-semibold">About us</p>
+                <p className="text-xl font-semibold">News & Events</p>
+                <p className="text-xl font-semibold">Careers</p>
+                <p className="text-xl font-semibold">Product</p>
+                <p className="text-xl font-semibold">Resources</p>
+                <p className="text-xl font-semibold">Contact Us</p>
               </div>
 
               {/* Buttons */}

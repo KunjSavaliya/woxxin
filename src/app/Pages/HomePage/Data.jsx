@@ -1,14 +1,4 @@
-export const images = [
-    '/HomePages/Logo1.png',
-    '/HomePages/Logo2.png',
-    '/HomePages/Logo3.png',
-    '/HomePages/Logo4.png',
-    '/HomePages/Logo5.png',
-    '/HomePages/Logo6.png',
-    '/HomePages/Logo7.png',
-    '/HomePages/Logo.png'
 
-  ];
 
 
   export const contentArray = [
