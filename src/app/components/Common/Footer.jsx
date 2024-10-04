@@ -59,7 +59,7 @@ function Footer() {
 
     return (
         <div className=' bg-[#263238]'>
-            <div className='flex flex-wrap justify-start p-10 gap-x-5 gap-y-10 sm:p-8 md:p-8 md:justify-around lg:gap-20 lg:p-20 xl:ml-48 xl:mr-48'>
+            <div className='flex flex-wrap justify-start p-3 gap-x-8 gap-y-10 sm:p-8 md:p-8 md:justify-around lg:gap-20 lg:p-20 xl:ml-48 xl:mr-48'>
                 <div>
             <Text size="text-md md:text-xl lg:text-3xl xl:text-[25px] text-white text-start">
             Advertisers
@@ -83,7 +83,7 @@ function Footer() {
                         </p>
                     ))}
                 </div>
-              <Button text="Live Demo" iconColor="white" className="mt-5   bg-[#6C63FF]" />
+              {/* <Button text="Live Demo" iconColor="white" className="mt-5   bg-[#6C63FF]" /> */}
 
             </div>
             <div className=''>
@@ -121,7 +121,7 @@ function Footer() {
                         </p>
                     ))}
                 </div>
-              <Button text="Contact Us" iconColor="white" className="mt-5   bg-[#6C63FF]" />
+              {/* <Button text="Contact Us" iconColor="white" className="mt-5   bg-[#6C63FF]" /> */}
 
             </div>
             <div className=''>
