@@ -59,14 +59,14 @@ function Footer() {
 
     return (
         <div className=' bg-[#263238]'>
-            <div className='flex flex-wrap justify-start gap-16 p-5 lg:justify-around lg:gap-20 lg:p-20 xl:ml-48 xl:mr-48'>
+            <div className='flex flex-wrap justify-start p-10 gap-x-5 gap-y-10 sm:p-8 md:p-8 md:justify-around lg:gap-20 lg:p-20 xl:ml-48 xl:mr-48'>
                 <div>
             <Text size="text-md md:text-xl lg:text-3xl xl:text-[25px] text-white text-start">
             Advertisers
               </Text>
                 <div className='mt-8'>
                     {Advertisers.map((item, index) => (
-                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm lg:text-lg`}>
+                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm md:text-lg`}>
                             {item.title}
                         </p>
                     ))}
@@ -78,7 +78,7 @@ function Footer() {
               </Text>
                 <div className='mt-8'>
                     {AdFormats.map((item, index) => (
-                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm lg:text-lg`}>
+                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm md:text-lg`}>
                             {item.title}
                         </p>
                     ))}
@@ -92,7 +92,7 @@ function Footer() {
               </Text>
                 <div className='mt-8'>
                     {Verticals.map((item, index) => (
-                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm lg:text-lg`}>
+                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm md:text-lg`}>
                             {item.title}
                         </p>
                     ))}
@@ -104,7 +104,7 @@ function Footer() {
               </Text>
                 <div className='mt-8'>
                     {Resources.map((item, index) => (
-                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm lg:text-lg`}>
+                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm md:text-lg`}>
                             {item.title}
                         </p>
                     ))}
@@ -116,7 +116,7 @@ function Footer() {
               </Text>
                 <div className='mt-8'>
                     {Company.map((item, index) => (
-                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm lg:text-lg`}>
+                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm md:text-lg`}>
                             {item.title}
                         </p>
                     ))}
@@ -130,7 +130,7 @@ function Footer() {
               </Text>
                 <div className='mt-8'>
                     {OurContacts.map((item, index) => (
-                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm lg:text-lg`}>
+                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm md:text-lg`}>
                             {item.title}
                         </p>
                     ))}
@@ -142,7 +142,7 @@ function Footer() {
               </Text>
                 <div className='mt-8'>
                     {Publishers.map((item, index) => (
-                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm lg:text-lg`}>
+                        <p key={index} className={`mt-${index === 0 ? '0' : '5'} text-sm md:text-lg`}>
                             {item.title}
                         </p>
                     ))}
@@ -154,7 +154,7 @@ function Footer() {
               </Text>
                 <div className='flex gap-2 mt-2 '>
                     {PricingModels.map((item, index) => (
-                        <p key={index} className={`mt-${index === 0 ? '5' : '5'} text-sm lg:text-lg`}>
+                        <p key={index} className={`mt-${index === 0 ? '5' : '5'} text-sm md:text-lg`}>
                             {item.title}
                         </p>
                     ))}
