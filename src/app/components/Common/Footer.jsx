@@ -59,7 +59,7 @@ function Footer() {
 
     return (
         <div className=' bg-[#263238]'>
-            <div className='flex flex-wrap justify-start p-3 gap-x-8 gap-y-10 sm:p-8 md:p-8 md:justify-around lg:gap-20 lg:p-20 xl:ml-48 xl:mr-48'>
+            <div className='flex flex-wrap justify-between p-11 gap-y-10 sm:p-8 md:p-8 md:justify-around lg:gap-20 lg:p-20 xl:ml-48 xl:mr-48'>
                 <div>
             <Text size="text-md md:text-xl lg:text-3xl xl:text-[25px] text-white text-start">
             Advertisers
