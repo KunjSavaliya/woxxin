@@ -47,7 +47,7 @@ function MainPage() {
 
       <div className='lg:px-28 xl:px-32'>
         <div className='bg-[#efefef] pt-16 rounded-md'>
-          <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px]'}>
+          <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px] p-4'}>
             Who can <span className='text-[#6C63FF]'>benefit from Woxxin</span> ad network
           </Text>
 
