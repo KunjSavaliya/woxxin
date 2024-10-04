@@ -7,7 +7,7 @@ const VideoButton = ({ text, onClick, className, type = 'Video', disabled = fals
     <button
       type={type}
       onClick={onClick}
-      className={`flex items-center py-2 px-8 rounded font-bold bg-[#6C63FF] hover:bg-[#373435] ${className}`} 
+      className={`flex items-center py-3 px-8 rounded font-bold bg-[#6C63FF] hover:bg-[#373435] ${className}`} 
       disabled={disabled}
     >
       {text}
