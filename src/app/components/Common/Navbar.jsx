@@ -44,7 +44,7 @@ function Navbar() {
     };
   }, [dropdownRef]);
 
-  // Disable scrolling when dropdown is open
+  // Disable scrolling when dropdown or sidebar is open
   useEffect(() => {
     if (isDropdownOpen || isOpen) {
       document.body.style.overflow = 'hidden';
@@ -52,6 +52,17 @@ function Navbar() {
       document.body.style.overflow = 'auto';
     }
   }, [isDropdownOpen, isOpen]);
+
+  // Persist the sidebar state across page reloads using localStorage
+  useEffect(() => {
+    const savedIsOpen = localStorage.getItem('isOpen') === 'true';
+    setIsOpen(savedIsOpen);
+  }, []);
+
+  // Update localStorage when sidebar state changes
+  useEffect(() => {
+    localStorage.setItem('isOpen', isOpen);
+  }, [isOpen]);
 
   // Dropdown items
   const dropdownItems = [
@@ -90,7 +101,7 @@ function Navbar() {
               </p>
               {/* Dropdown Menu */}
               {isDropdownOpen && (
-                <div className="absolute z-10 mt-2 bg-white rounded shadow-lg p-7 w-72">
+                <div className="absolute z-10 mt-2 bg-white border border-[#6C63FF] shadow-xl rounded-2xl p-6 w-72">
                   {dropdownItems.map((item, index) => (
                     <div key={index}>
                       <div className="flex flex-col cursor-pointer hover:text-blue-500" onClick={() => {
@@ -135,7 +146,7 @@ function Navbar() {
         {/* Sidebar for Mobile */}
         {isOpen && (
           <div
-            className="fixed top-0 left-0 z-50 w-full h-[100vh] p-3 bg-white shadow-lg lg:w-1/2 animate__animated animate__fadeInDown"
+            className=" overflow-scroll fixed top-0 left-0 z-50 w-full h-[100vh] p-3 bg-white shadow-lg lg:w-1/2 animate__animated animate__fadeInDown"
           >
             {/* Sidebar Header: Logo + Close Icon */}
             <div className="flex items-center justify-between mb-5">
