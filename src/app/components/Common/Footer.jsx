@@ -1,9 +1,7 @@
 import React from 'react';
 import Text from '@/app/Reusable/Text'
-import Button from '@/app/Reusable/Button';
 
 function Footer() {
-    // Create an array of footer items
     const Advertisers = [
         { title: 'Benefits for Advertisers' },
         { title: 'Pricing Models' },
@@ -16,7 +14,6 @@ function Footer() {
         { title: 'Social Bar' },
         { title: 'Native Advertising' },
         { title: 'Display Banners' }
-
     ];
     const Verticals = [
         { title: 'Games' },
@@ -83,8 +80,6 @@ function Footer() {
                         </p>
                     ))}
                 </div>
-              {/* <Button text="Live Demo" iconColor="white" className="mt-5   bg-[#6C63FF]" /> */}
-
             </div>
             <div className=''>
             <Text size="text-md md:text-xl lg:text-3xl xl:text-[25px] text-white text-start">
@@ -121,8 +116,6 @@ function Footer() {
                         </p>
                     ))}
                 </div>
-              {/* <Button text="Contact Us" iconColor="white" className="mt-5   bg-[#6C63FF]" /> */}
-
             </div>
             <div className=''>
             <Text size="text-md md:text-xl lg:text-3xl xl:text-[25px] text-white text-start">

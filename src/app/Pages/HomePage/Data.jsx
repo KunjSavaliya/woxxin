@@ -3,37 +3,37 @@
 
   export const contentArray = [
     {
-      imgSrc: "/ScreenImg/Screen1.png",
+      imgSrc: "/HomePages/ScreenImg/Screen1.png",
       title: "Recover Ad-blocked Revenue",
       description: "We help publishers recover the revenue they are losing due to ad  blockers. Our ads adhere to the highest UX standards as laid out by the Acceptable Ads standards.",
       learnMore: "Learn More",
     },
     {
-      imgSrc: "/ScreenImg/Screen2.png",
+      imgSrc: "/HomePages/ScreenImg/Screen2.png",
       title: "Blazing Fast Ad Delivery",
       description: "We help publishers recover the revenue they are losing due to ad  blockers. Our ads adhere to the highest UX standards as laid out by the Acceptable Ads standards.",
       learnMore: "Learn More",
     },
     {
-      imgSrc: "/ScreenImg/Screen3.png",
+      imgSrc: "/HomePages/ScreenImg/Screen3.png",
       title: "Drive Bid Competition",
       description: "Open up your ad inventory for bidding by multiple demand partners in  real-time. Our system auto-selects the optimal number of partners, so  that you get the best yield for every single impression.",
       learnMore: "Learn More",
     },
     {
-      imgSrc: "/ScreenImg/Screen4.png",
+      imgSrc: "/HomePages/ScreenImg/Screen4.png",
       title: "Highly-viewable Formats",
       description: "Our visual ad manager allows point-and-click creation of new ad units and layouts, while our machine learning based layout optimizer  drives ad revenue growth using automated A/B testing.",
       learnMore: "Learn More",
     },
     {
-      imgSrc: "/ScreenImg/Screen5.png",
+      imgSrc: "/HomePages/ScreenImg/Screen5.png",
       title: "Maximize eCPMs & Revenue",
       description: "Open up your ad inventory for bidding by multiple demand partners in  real-time. Our system auto-selects the optimal number of partners, so  that you get the best yield for every single impression.",
       learnMore: "Learn More",
     },
     {
-      imgSrc: "/ScreenImg/Screen6.png",
+      imgSrc: "/HomePages/ScreenImg/Screen6.png",
       title: "Improve Clickthrough Rates",
       description: "Our visual ad manager allows point-and-click creation of new ad units and layouts, while our machine learning based layout optimizer  drives ad revenue growth using automated A/B testing.",
       learnMore: "Learn More",

@@ -32,7 +32,6 @@ function Publishers() {
 
   return (
     <div className='p-6 mt-20 lg:p-0'>
-      {/* First Publisher */}
       <div ref={(el) => sectionsRef.current[0] = el} className='flex flex-wrap gap-5 justify-evenly'>
         <div>
           <img src='/HomePages/converting4.png' className='w-auto h-[250px] sm:h-[300px] md:h-[300px] lg:h-[350px] xl:h-[400px]' alt='Popunder' />
@@ -51,8 +50,6 @@ function Publishers() {
           </div>
         </div>
       </div>
-
-      {/* Second Publisher */}
       <div ref={(el) => sectionsRef.current[1] = el} className='flex flex-wrap gap-5 mt-20 justify-evenly'>
         <div>
           <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px] text-start'}>Social Bar</Text>
@@ -71,8 +68,6 @@ function Publishers() {
           <img src='/HomePages/converting5.png' className='w-auto h-[250px] sm:h-[300px] md:h-[300px] lg:h-[350px] xl:h-[400px]' alt='Social Bar' />
         </div>
       </div>
-
-      {/* Third Publisher */}
       <div ref={(el) => sectionsRef.current[2] = el} className='flex flex-wrap gap-5 mt-10 justify-evenly'>
         <div>
           <img src='/HomePages/converting6.png' className='w-auto h-[250px] sm:h-[300px] md:h-[300px] lg:h-[350px] xl:h-[400px]' alt='In-Page Push' />
@@ -92,7 +87,6 @@ function Publishers() {
         </div>
       </div>
 
-      {/* Fourth Publisher */}
       <div ref={(el) => sectionsRef.current[3] = el} className='flex flex-wrap gap-5 mt-10 justify-evenly'>
         <div>
           <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px] text-start'}>Interstitials</Text>
