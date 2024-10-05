@@ -96,7 +96,7 @@ function MainPage() {
           We deliver <span className='text-[#6C63FF]'>high-converting ads </span>  and traffic
         </Text>
       </div>
-      <div className='mt-20 font-bold lg:px-28 xl:px-40 '>
+      <div className='p-3 mt-20 font-bold lg:px-28 xl:px-40 '>
         <div className="flex rounded-[50px] border-2 border-[#6C63FF]"> {/* Added border */}
           <div
             onClick={() => setActive('Advertisers')}
